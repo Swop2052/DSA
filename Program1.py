@@ -5,20 +5,35 @@
 
 
     
-def two_sum(nums, target):
-    hashmap = {}
-    '''initializes an empty associative array. This data structure stores data in key-value pairs, allowing you to quickly insert, retrieve, and delete values based on their unique keys.'''
+# def two_sum(nums, target):
+#     hashmap = {}
+    
 
-    for i in range(len(nums)):
-        complement = target - nums[i]
+#     for i in range(len(nums)):
+#         complement = target - nums[i]
 
-        if complement in hashmap:
-            return [hashmap[complement], i]
+#         if complement in hashmap:
+#             return [hashmap[complement], i]
 
-        hashmap[nums[i]] = i
+#         hashmap[nums[i]] = i
 
-nums = [2,7,11,15]
+# nums = [2,7,11,15]
+# target = 9
+
+# print(two_sum(nums, target))
+
+
+
+# nums = [2,11,7,15]
+# target = 9
+# Output: [0,2]
+
+def sum(num,target):
+    for i in range(len(num)):
+        for j in range(i+1,len(num)):
+            if num[i] + num[j] == target:
+                return[i,j]
+
+num = [2,11,7,15]
 target = 9
-
-print(two_sum(nums, target))
-
+print(sum(num,target)) 
