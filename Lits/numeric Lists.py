@@ -1,16 +1,30 @@
+"""
+Topic: Operations on Numeric Lists
+Description: Python provides built-in functions like sum(), max(), and min()
+that make it easy to perform mathematical operations on a list of numbers.
+"""
+
+# Initial list of student marks
 marks = [78, 85, 92, 67, 74]
+print("Student Marks:", marks)
+print("-" * 25)
 
-# Calculate total marks
-print("Total:", sum(marks))
+# Calculate the total sum of all marks
+total = sum(marks)
+print(f"Total Marks: {total}")
 
-# Find highest mark
-print("Highest:", max(marks))
+# Find the highest (maximum) mark in the list
+highest = max(marks)
+print(f"Highest Mark: {highest}")
 
-# Find lowest mark
-print("Lowest:", min(marks))
+# Find the lowest (minimum) mark in the list
+lowest = min(marks)
+print(f"Lowest Mark: {lowest}")
 
-# Count number of marks
-print("Count:", len(marks))
+# Count total number of marks
+count = len(marks)
+print(f"Total Count: {count}")
 
-# Calculate average
-print("Average:", sum(marks) / len(marks))
+# Calculate the average (Total / Count)
+average = total / count
+print(f"Average Mark: {average}")

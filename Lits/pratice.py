@@ -1,43 +1,39 @@
-# Task
+"""
+Topic: Practice - Shopping List
+Description: A practical exercise that takes 5 shopping items from the user,
+stores them in a list, and performs basic operations.
+"""
 
-# Create a program that takes 5 shopping items from the user and stores them in a List.
+# TASK REQUIREMENTS:
+# 1. Create an empty List.
+# 2. Take 5 item names from the user.
+# 3. Add every item using append().
+# 4. Print the complete List.
+# 5. Print the first item.
+# 6. Print the last item.
+# 7. Print the total number of items.
 
-# Requirements
-# Create an empty List.
-# Take 5 item names.
-# Add every item using append().
-# Print the complete List.
-# Print the first item.
-# Print the last item.
-# Print the total number of items.
+print("--- Welcome to the Shopping List Manager ---")
 
-
-
-
-
-
-
-# Create an empty shopping List
+# Step 1: Create an empty shopping List
 shopping_list = []
 
-# Take 5 items from the user
+# Step 2 & 3: Take 5 items from the user and append them
 for i in range(5):
-
     # Ask the user for an item
-    item = input("Enter shopping item: ")
-
+    item = input(f"Enter shopping item {i+1}: ")
     # Add the item to the List
     shopping_list.append(item)
 
-
-# Display the complete List
+print("\n--- Summary ---")
+# Step 4: Display the complete List
 print("Shopping List:", shopping_list)
 
-# Display the first item
+# Step 5: Display the first item
 print("First Item:", shopping_list[0])
 
-# Display the last item
+# Step 6: Display the last item
 print("Last Item:", shopping_list[-1])
 
-# Display the total number of items
+# Step 7: Display the total number of items
 print("Total Items:", len(shopping_list))
